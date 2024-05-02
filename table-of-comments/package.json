@@ -1,0 +1,44 @@
+{
+  "name": "table-of-comments",
+  "displayName": "Table of Comments",
+  "description": "Table of Comments allows you to create custom outlines of your files by placing 'special' comments throughout your code.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "table-of-comments.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "table-of-comments.readEditorContent",
+        "title": "Read Editor Content"
+      },
+      {
+        "command": "table-of-comments.logEditorComments",
+        "title": "Log Editor Comments"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.88.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
